@@ -1,0 +1,81 @@
+.table_text{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.table_contact{
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    height: 10px;
+}
+.table {
+    text-align: center;
+    background-color: #EA5455;
+    width: 100%;
+}
+.text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #002B5B;
+}
+
+.text2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: #EA5455;
+}
+
+.ref{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #002B5B;
+    
+}
+
+td:hover {background-color: #FFF4E0;}
+
+body{
+    background-color: #FFF4E0;
+    padding-bottom: 30px;
+}
+
+hr{
+    border: none;
+    background-color: #EA5455;
+    height: 10px;
+
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 90px;
+    color: #002B5B;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: #002B5B;
+}
+.zapati{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #EA5455;
+   color: #002B5B;
+   text-align: center;
+   z-index: 3;
+}
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}

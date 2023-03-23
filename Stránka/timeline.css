@@ -1,0 +1,108 @@
+:root {
+    --primary: #FFF4E0;
+  }
+  .section-header {
+    text-align: center;
+  }
+  .section-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .section-header hr {
+    border: 1px solid #002B5B;
+    width: 56px;
+  }
+  .bg-gradient_solid {
+    background: var(--primary);
+    color: #002B5B;
+    padding: 48px 0;
+  }
+  .steps {
+    position: relative;
+    margin-top: 32px;
+  }
+  .steps::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: #EA5455;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  }
+  
+  .steps .content p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #002B5B;
+  }
+  
+  .steps .content h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #002B5B;
+  }
+  
+  .steps-container {
+    position: relative;
+    background-color: inherit;
+    width: calc(50% + 32px);
+  }
+  
+  .steps-container .content {
+    padding: 12px;
+    background-color: #EA5455;
+    position: relative;
+    box-shadow: #1b1313;
+  }
+  
+  .steps .steps-container:nth-child(even) {
+    left: calc(50% - 32px);
+    flex-direction: row-reverse;
+  }
+  
+  .steps-container {
+    display: flex;
+  }
+  
+  .steps .steps-container .date {
+    font-weight: 900;
+    font-size: 16px;
+    color: #002B5B;
+    margin-bottom: 10px;
+    width: 62px;
+    height: 62px;
+    background-color: #EA5455;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .step-line {
+    width: 40px;
+    background-color: #EA5455;
+    height: 1px;
+    margin-top: 31px;
+    opacity: 0.4;
+    flex-shrink: 0;
+  }
+  
+  @media (max-width: 767px) {
+    .steps::after {
+      left: 32px;
+    }
+    .steps-container {
+      left: 0;
+      flex-direction: row-reverse;
+      width: auto;
+      margin-bottom: 16px;
+    }
+    .steps .steps-container:nth-child(even) {
+      left: 0;
+    }
+  }
